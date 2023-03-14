@@ -28,7 +28,12 @@ body{
 .texto_cinza{
     color: #404040;
 }
-
+.justificado{
+    text-align: justify;
+}
+.centro{
+    text-align: center;
+}
 
 
 /*Menu*/
@@ -62,7 +67,7 @@ body{
         top: -25px;
         right: -500px;
         padding: 10px;
-        height: 100vh;
+        height: 120vh;
         background-color: #545454;
         display: flex;
         flex-direction: column;
@@ -297,6 +302,10 @@ body{
 }
 h3{
     text-align: left;
+    color: #f8a71c;
+}
+.naocor h3{
+    color: #217fb1;
 }
 
 @media screen and (max-width: 768px) {

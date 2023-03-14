@@ -2,6 +2,10 @@
     font-family: "tiltwarp";
     src: url("assets/fonts/TiltWarp-Regular.ttf") format("truetype");
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
 * {box-sizing: border-box;}
 body{
     margin: 0;
@@ -275,7 +279,7 @@ body{
 }
 
 #footer ul li:nth-child(1){
-    border-bottom: 4px solid rgb(125, 125, 125);
+    border-bottom: 4px solid #f8a71c;
     width: 50%;
 }
 
@@ -406,4 +410,25 @@ textarea{
 .grade img{
     width: 100%;
     transition: all 1s ease;
+}
+
+
+/*efeito suave*/
+
+.hiddenL{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hiddenR{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

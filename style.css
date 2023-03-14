@@ -10,6 +10,27 @@ body{
     overflow-x: hidden;
 }
 
+.verde_escuro{
+    background-color: #2a674e;
+}
+.verde_claro{
+    background-color: #70bd3a;
+}
+.azul{
+    background-color: #217fb1;
+}
+.amarelo{
+    background-color: #f8a71c;
+}
+.texto_branco{
+    color: white;
+}
+.texto_cinza{
+    color: #404040;
+}
+
+
+
 /*Menu*/
 #menu{
     position: fixed;
@@ -151,40 +172,205 @@ body{
 
 /*Slider principal*/
 
-swiper-container {
+.banerContem {
     width: 100%;
     height: 100vh;
     background-color: #217fb1;
 }
 @media screen and (max-width: 768px) {
-    swiper-container {
+    .banerContem {
         height: 300px;
-    }   
+    }
 }
-swiper-slide:nth-child(1){
+.banerItem:nth-child(1){
     background-image: url("assets/imagens/fundos/fundo3.png");
-}swiper-slide:nth-child(2){
+}.banerItem:nth-child(2){
     background-image: url("assets/imagens/fundos/fundo1.png");
-}swiper-slide:nth-child(3){
+}.banerItem:nth-child(3){
     background-image: url("assets/imagens/fundos/fundo2.png");
 }
-swiper-slide{
+.banerItem{
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position:center;
 }
 
-/*historia*/
+/*produtos*/
 .parte{
     width: 90%;
     margin: auto;
+    font-size: 20px;
 }
 
 .titulo{
     text-align: center;
+    font-size: 3em;
 }
 
 .texto{
     text-align: justify;
+    font-size: 1em;
+}
+
+.produtoContem{
+    width: 70%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .produtoContem{
+        width: 100%;
+    }
+    .parte{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .parte{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .parte{
+        font-size: 12px;
+    }
+}
+.produtoItem img{
+    width: 100%;
+}
+
+
+/*  footer  */
+
+#footerColor{
+    background-color: #217fb1;
+    width: 100%;
+    height: auto;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+
+#footer div{
+    width: 30%;
+}
+
+#footer ul{
+    list-style: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#footer ul li{
+    margin-top: 10px;
+}
+
+#footer ul li:nth-child(1){
+    border-bottom: 4px solid rgb(125, 125, 125);
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #footer{
+        flex-direction: column;
+    }
+    #footer div{
+        width: 90%;
+    }
+}
+
+/*sobre nos*/
+.conteudo_responsivo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.item_responsivo{
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo_responsivo{
+        flex-direction: column;
+    }
+    .item_responsivo{
+        width: 100%;
+    }
+}
+
+/*Contato*/
+
+#contato{
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/imagens/fundos/Estampa-Brasil.svg");
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.submission-form{
+    width: 700px;
+    padding: 20px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+display: flex;
+flex-direction: column;
+}
+
+.inputes,textarea,#sendBtn{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    height: 40px;
+}
+
+textarea{
+    height: 200px;
+    resize: vertical;
+}
+
+#sendBtn{
+    width: fit-content;
+    margin: auto;
+    padding: 0px 30px;
+    transition: all 0.3s;
+}
+
+#sendBtn:hover{
+    background-color: #217fb1;
+    color: wheat;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .submission-form{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .submission-form{
+        width: 300px;
+    }
 }

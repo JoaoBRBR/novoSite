@@ -374,3 +374,27 @@ textarea{
         width: 300px;
     }
 }
+
+
+/*parceiros*/
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    transition: all 1s ease;
+}
+@media screen and (max-width: 768px) {
+    .grade {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        transition: all 1s ease;
+    }
+}
+
+.grade img{
+    width: 100%;
+    transition: all 1s ease;
+}

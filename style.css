@@ -14,7 +14,6 @@ body{
     color: #404040;
     overflow-x: hidden;
 }
-
 .verde_escuro{
     background-color: #2a674e;
 }
@@ -81,7 +80,12 @@ body{
     right: 0px;
     padding: 10px;
 }
-
+.socialMenu{
+    display: none!important;
+}
+#botaoLogo{
+    width: fit-content;
+}
 @media screen and (max-width: 768px) {
     #botoes{
         position: absolute;
@@ -93,6 +97,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         transition: 1s ease-in;
     }
     #menu img{
@@ -101,6 +106,9 @@ body{
     #menu input:checked ~ #botoes{
         right: -25px;
         transition: 1s ease-in;
+    }
+    .socialMenu{
+        display: block!important;
     }
 }
 
@@ -190,10 +198,6 @@ body{
     width: 30px;
     height: 4px;
 }
-
-
-
-
 
 
 /*Slider principal*/
@@ -292,6 +296,16 @@ body{
     #footer div{
         width: 90%;
     }
+}
+
+.social a{
+    text-decoration: none;
+    color: wheat;
+    transition: 0.2s;
+}
+.social a:hover{
+    color: #f8a71c;;
+    transition: 0.2s;
 }
 
 /*sobre nos*/
@@ -453,10 +467,10 @@ textarea{
     background-image: url("assets/imagens/fundos/fundoManeiro2.jpg");
 }
     
-    @media only screen and (max-device-width: 800px) {
-        .parallax {
-            background-attachment: scroll;
-            min-height: 150px; 
-        }
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        min-height: 150px; 
     }
+}
     

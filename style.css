@@ -9,6 +9,7 @@ html {
 * {box-sizing: border-box;}
 body{
     margin: 0;
+    padding: 0;
     font-family: "tiltwarp";
     color: #404040;
     overflow-x: hidden;
@@ -38,7 +39,23 @@ body{
 .centro{
     text-align: center;
 }
+.parte{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 20px;
+    overflow-x: hidden;
+}
 
+.titulo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.texto{
+    text-align: justify;
+    font-size: 1em;
+}
 
 /*Menu*/
 #menu{
@@ -206,21 +223,6 @@ body{
 }
 
 /*produtos*/
-.parte{
-    width: 90%;
-    margin: auto;
-    font-size: 20px;
-}
-
-.titulo{
-    text-align: center;
-    font-size: 3em;
-}
-
-.texto{
-    text-align: justify;
-    font-size: 1em;
-}
 
 .produtoContem{
     width: 70%;
@@ -432,3 +434,29 @@ textarea{
     filter: blur(0);
     transform: translateX(0);
 }
+
+
+
+/*parallax*/
+
+.parallax{
+    min-height: 250px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paraA{
+    background-image: url("assets/imagens/fundos/fundoManeiro1.jpg");
+}
+.paraB{
+    background-image: url("assets/imagens/fundos/fundoManeiro2.jpg");
+}
+    
+    @media only screen and (max-device-width: 800px) {
+        .parallax {
+            background-attachment: scroll;
+            min-height: 150px; 
+        }
+    }
+    

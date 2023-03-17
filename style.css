@@ -34,6 +34,7 @@ body{
 }
 .justificado{
     text-align: justify;
+    padding: 0px 20px;
 }
 .centro{
     text-align: center;
@@ -57,7 +58,7 @@ body{
 }
 .gloss{
         /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
+background: rgba(255, 255, 255, 0.7);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
@@ -246,6 +247,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .parte{
         font-size: 18px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -435,19 +437,16 @@ textarea{
 
 .hiddenL{
     opacity: 0;
-    filter: blur(10px);
     transform: translateX(-100%);
     transition: all 1s;
 }
 .hiddenR{
     opacity: 0;
-    filter: blur(10px);
     transform: translateX(100%);
     transition: all 1s;
 }
 .show{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 

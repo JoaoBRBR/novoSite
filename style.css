@@ -475,3 +475,20 @@ textarea{
     }
 }
     
+
+/*mascote :( */
+#mascote{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+#mascote img{
+    width: 400px;
+    margin: auto;
+}
+@media screen and (max-width: 500px) {
+    #mascote img{
+        width: 200px;
+    }
+}

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "tiltwarp";
-    src: url("assets/fonts/TiltWarp-Regular.ttf") format("truetype");
+    src: url("assets/fonts/MerriweatherSans-Light.ttf") format("truetype");
 }
 html {
     scroll-behavior: smooth;
@@ -330,6 +330,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: justify;
     padding: 20px;
 }
+.item_responsivo img{
+    width: 100%;
+}
 h3{
     text-align: left;
     color: #f8a71c;
@@ -341,9 +344,18 @@ h3{
 @media screen and (max-width: 768px) {
     .conteudo_responsivo{
         flex-direction: column;
+        overflow-x: hidden;
     }
     .item_responsivo{
         width: 100%;
+        overflow-x: hidden;
+    }
+    .imgItem{
+        display: flex;
+        justify-content: center;
+    }
+    .imgItem img{
+        width: 155%;
     }
 }
 

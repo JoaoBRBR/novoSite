@@ -38,9 +38,13 @@
           if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             document.getElementById("menu").style.background = "#217fb1";
             document.getElementById("logo").style.width = "100px";
+            document.getElementById("logo").style.left = "0px";
           } else {
             document.getElementById("menu").style.background = "none";
             document.getElementById("logo").style.width = "250px";
+            if(window.innerWidth < 768){
+                document.getElementById("logo").style.left = "calc(50% - 125px)";
+            }
           }
         }
     </script>
@@ -216,7 +220,7 @@
     <!--Produtos-->
     <div class="parte">
         <h1 class="titulo" id="produtos" >Nossa Loja</h1>
-        <swiper-container class="produtoContem" space-between="30" slides-per-view="2" loop="true" navigation="true">
+        <swiper-container class="produtoContem" space-between="10" slides-per-view="3" loop="true" navigation="true">
             <swiper-slide class="produtoItem"><img src="assets/imagens/produtos/c11.png" alt="camisa"></swiper-slide>
             <swiper-slide class="produtoItem"><img src="assets/imagens/produtos/camisa1.png" alt="camisa"></swiper-slide>
             <swiper-slide class="produtoItem"><img src="assets/imagens/produtos/c2.jpeg" alt="camisa"></swiper-slide>

@@ -49,12 +49,12 @@ body{
 
 .titulo{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .texto{
     text-align: justify;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 .gloss{
         /* From https://css.glass */
@@ -251,6 +251,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     .parte{
         font-size: 18px;
         width: 100%;
+    }
+    .texto{
+        font-size: 1.2em;
     }
 }
 @media screen and (max-width: 500px) {

@@ -307,7 +307,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 @media screen and (max-width: 768px) {
     #footer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #footer div{
         width: 90%;

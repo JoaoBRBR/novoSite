@@ -63,28 +63,28 @@
             <br><br>
             <h1 class="titulo" id="historia" >Nossa História</h1>
             <div class="conteudo_responsivo">
-                <div class="item_responsivo imgItem hiddenR">
+                <div class="item_responsivo imgItem hiddenL">
                     <img src="assets/imagens/sobre/particular.png" alt="grupo de crianças">
                 </div>
-                <div class="item_responsivo hiddenL texto">
+                <div class="item_responsivo hiddenR texto">
                     <h3>Sobre nós</h3>
                     <p>O Instituto Criancas Sobre Rodas hoje e a maior escola de skate para crianças de Angra dos Reis e uma das maiores do país. Somos uma escola socioeducativa com metodologia pedagógica voltada para o skate. Contamos com uma equipe muito bem preparada e capacitada que desde 2021 vem transformando vidas através do esporte.</p>
                 </div>
             </div>
             <div class="conteudo_responsivo">
-                <div class="item_responsivo hiddenR texto">
+                <div class="item_responsivo hiddenL texto">
                     <h3>Nosso objetivo</h3>
                     <p>No instituto Criança Sobre Rodas, não falamos somente sobre skate, aqui também falamos de sonhos, família e futuro com nossos alunos.</p>
                 </div>
-                <div class="item_responsivo imgItem hiddenL">
+                <div class="item_responsivo imgItem hiddenR">
                     <img src="assets/imagens/sobre/objetivo.png" alt="grupo de crianças em uma aula de skate">
                 </div>
             </div>
             <div class="conteudo_responsivo">
-                <div class="item_responsivo imgItem hiddenR">
+                <div class="item_responsivo imgItem hiddenL">
                     <img src="assets/imagens/sobre/matriz.png" alt="pista de skate vasia">
                 </div>
-                <div class="item_responsivo hiddenL texto">
+                <div class="item_responsivo hiddenR texto">
                     <h3>Matriz e Filiais</h3>
                     <p>Nossa Matriz fica no bairro do Frade em Angra Dos Reis.</p>
                     <p>Iremos inaugurar mais dois núcleos em Angra dos Reis.
@@ -155,13 +155,13 @@
                 </div>
             </div>-->
             <div class="conteudo_responsivo">
+                <div class="item_responsivo imgItem hiddenL">
+                    <img src="assets/imagens/sobre/campeonato.png" alt="aula de skate">
+                </div>
                 <!--aqui-->
                 <div class="item_responsivo hiddenR texto">
                     <h3>Competições</h3>
                     <p>Quando a diversão começa a se tornar mais comprometida e o estudante, junto com seus responsáveis, deseja progredir na modalidade esportiva, instruímos e capacitamos os alunos para competições, onde aprenderão lições valiosas através das vitórias e derrotas, promovendo uma maior motivação e autoconfiança nas crianças.</p>
-                </div>
-                <div class="item_responsivo imgItem hiddenL">
-                    <img src="assets/imagens/sobre/campeonato.png" alt="aula de skate">
                 </div>
             </div>
             <br>
@@ -245,7 +245,7 @@
                     <img src="assets/imagens/parceiros/logo3.png" alt="Logo Taizinho">
                     <img src="assets/imagens/parceiros/logo2.png" alt="Logo TopNautica">
                     <img src="assets/imagens/parceiros/logo4.png" alt="Logo Casas Santana">
-                    <img src="assets/imagens/logos/logo2.png">
+                    <img src="assets/imagens/parceiros/logo8.png" alt="Logo AngraLab">
                     <img src="assets/imagens/parceiros/logo7.png" alt="Logo Construmar">
                     <img src="assets/imagens/parceiros/logo1.png" alt="Logo Guerra">
                     <img src="assets/imagens/parceiros/logo5.png" alt="Logo LC mecânica marítma">
@@ -299,11 +299,13 @@
             <div>
                 <ul>
                     <li>REDES SOCIAIS</li>
-                    <li><a href="https://instagram.com/stories/instituto_criancassobrerodas/3050423629100798551?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-                    <br>
-                    <li><a href="https://www.facebook.com/criancassobre.rodas?mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-                    <br>
-                    <li><a href="https://youtu.be/pDZMMS15CS0"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+                    <li>
+                        <a href="https://instagram.com/stories/instituto_criancassobrerodas/3050423629100798551?utm_source=ig_story_item_share&igshid=MDJmNzVkMjY="><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        &nbsp &nbsp
+                        <a href="https://www.facebook.com/criancassobre.rodas?mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                        &nbsp &nbsp
+                        <a href="https://youtu.be/pDZMMS15CS0"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -328,9 +330,11 @@
                 console.log(entry)
                 if(entry.isIntersecting){
                     entry.target.classList.add('show');
-                }else{
-                    entry.target.classList.remove('show');
                 }
+                //se quiser que os efeitos de movimento sejam constantes:
+                //else{
+                //    entry.target.classList.remove('show');
+                //}
             });
         });
         const hiddenElementsL = document.querySelectorAll('.hiddenL');
@@ -341,9 +345,11 @@
                 console.log(entry)
                 if(entry.isIntersecting){
                     entry.target.classList.add('show');
-                }else{
-                    entry.target.classList.remove('show');
                 }
+                //se quiser que os efeitos de movimento sejam constantes:
+                //else{
+                //    entry.target.classList.remove('show');
+                //}
             });
         });
         const hiddenElementsR = document.querySelectorAll('.hiddenR');

@@ -226,10 +226,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
 .banerItem:nth-child(1){
-    background-image: url("assets/imagens/fundos/fundo3.png");
+    background-image: url("assets/imagens/fundos/fundo4.png");
 }.banerItem:nth-child(2){
-    background-image: url("assets/imagens/fundos/fundo1.png");
+    background-image: url("assets/imagens/fundos/fundo3.png");
 }.banerItem:nth-child(3){
+    background-image: url("assets/imagens/fundos/fundo1.png");
+}.banerItem:nth-child(4){
     background-image: url("assets/imagens/fundos/fundo2.png");
 }
 .banerItem{

@@ -437,8 +437,8 @@ textarea{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
     transition: all 1s ease;
 }
 @media screen and (max-width: 768px) {

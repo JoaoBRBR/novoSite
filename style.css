@@ -135,6 +135,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius:30px;
 }
 
+#table a{
+    margin:0px;
+}
+#table{
+    margin-right:40px;
+}
 #botoes a:hover{
     color: #000000;
     background-color: rgb(255, 255, 255);
@@ -437,13 +443,13 @@ textarea{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     transition: all 1s ease;
 }
 @media screen and (max-width: 768px) {
     .grade {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         transition: all 1s ease;
     }
@@ -520,4 +526,12 @@ textarea{
 .justificado a{
     text-decoration: none;
     color: #217fb1;
+}
+#apoio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#apoio img{
+    width: 70%;
 }

@@ -533,5 +533,11 @@ textarea{
     align-items: center;
 }
 #apoio img{
-    width: 70%;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #apoio img{
+        width: 70%;
+    }   
 }
